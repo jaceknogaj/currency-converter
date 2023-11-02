@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Domowy budżet</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <div class="container">
+        <h1 class="title">Przelicznik Walut</h1>
+
+        <form id="currency-form">
+          <div>
+            <input
+              type="number"
+              id="amount"
+              name="amount"
+              step="0.01"
+              placeholder="Kwota"
+              class="input"
+            />
+
+            <select id="currency" name="currency" class="select">
+              <option value="EUR">EUR</option>
+              <option value="USD">USD</option>
+              <option value="CHF">CHF</option>
+            </select>
+            <button class="btn-submit" type="submit">Przelicz na PLN</button>
+          </div>
+        </form>
+        <div id="result" class="result"></div>
+      </div>
+    </main>
+
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>

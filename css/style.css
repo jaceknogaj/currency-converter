@@ -1,0 +1,52 @@
+:root {
+  --mainFont: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--mainFont);
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.container {
+  padding: 0 14px;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.input,
+.select,
+.btn-submit {
+  padding: 6px;
+}
+
+.result {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.error {
+  color: red;
+}
